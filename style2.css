@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap');
+
+body
+{
+	width: 100%;
+	max-width: 1200px;
+	font-family: 'Roboto', sans-serif;
+	margin: auto;
+}
+
+header
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav a
+{
+	text-decoration: none;
+	color: black;
+	margin-left: 20px;
+}
+
+
+.banniere h1 
+{
+	color: white;
+}
+
+.banniere img
+{
+	width: 200px;
+}
+
+
+.banniere 
+{
+	background: url('Images/backgroung_image.jpg');
+	height: 489px;
+	width: 1200px;
+	display: flex;
+	margin-top: -4px;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.presentation
+{
+	opacity: 0.7;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 1.4em;
+	max-width: 800px;
+	text-align: center;
+	margin-top: 40px;
+}
+
+article h2
+{
+	font-size: 1.4em;
+	text-transform: uppercase;
+}
+
+.graphisme, .strategie, .illustration
+{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 0 20px 0 20px;
+}
+
+.graphisme p, .strategie p, .illustration p
+{
+	text-align: center;
+	font-size: 0.8em;
+}
+
+.article_milieu
+{
+	display: flex;
+	max-width: 800px;
+	justify-content: space-around;
+	margin-top: 30px;
+}
+
+.temoignage
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	max-width: 600px;
+	margin-top: 50px;
+}
+
+.temoignage p
+{
+	text-align: center;
+	opacity: 0.7;
+}
+
+.contenu_temoi
+{
+	font-size: 1.3em;
+}
+
+section
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+}
+
+footer
+{
+	background-color: #5b359d;
+	padding-top: 18px;
+}
+
+footer p
+{
+	color: white;
+	text-align: center;
+	font-size: 0.5em;
+	font-weight: 400;
+}
+
+.liens
+{
+	display: flex;
+	justify-content: space-around;
+}
+
+.liens h2 {
+	color: rgba(255, 255, 255, .6);
+	margin-top: 30px;    
+	font-weight: 400;
+	font-size: 1.0em;
+}
+
+.liens a, .liens p, .liens li {
+	color: white;
+}
+
+.liens a{
+	text-decoration: none;
+}
+
+.liens .Coordonnées li{
+	list-style-type: none;
+}
+
+.liens li::marker, .liens p::marker {
+	color: white;
+}
+
+.resaux_sociaux {
+	/* Step 1: Common Properties: All required to make icons render reliably */
+	.icon::before {
+		display: inline-block;
+		text-rendering: auto;
+		-webkit-font-smoothing: antialiased;
+	}
+
+	/* Step 2: Reference Individual Icons */
+	.login::before {
+		font: var(--fa-font-solid);
+		content: "\f007";
+	}
+
+	/* Note: Make sure to include the correct weight and Unicode value for the icon */
+	.tps::before {
+		font: var(--fa-font-solid);
+		content: "\f1ea";
+	}
+
+}
+
+.resaux_sociaux svg {
+	height: 30px;
+	color: rgba(255, 255, 255, .6);
+	margin: 0 40px 0 40px;
+}
